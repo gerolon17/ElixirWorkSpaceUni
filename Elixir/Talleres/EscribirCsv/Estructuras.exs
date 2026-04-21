@@ -8,7 +8,7 @@ defmodule Estructuras do
   end
 
   defp filtrar_datos_interes(datos) do
-    # Filtra solo clientes menores a 21 años
+
     Enum.filter(datos, &(&1.edad < 21))
   end
 

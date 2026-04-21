@@ -5,7 +5,6 @@ defmodule Cliente do
     %Cliente{nombre: nombre, edad: edad, altura: altura}
   end
 
-  # Convierte una línea de texto CSV en una estructura %Cliente{}
   def convertir_cadena_cliente(cadena) do
     [nombre, edad, altura] =
       cadena
@@ -15,7 +14,6 @@ defmodule Cliente do
     crear(nombre, String.to_integer(edad), String.to_float(altura))
   end
 
-  # Convierte una estructura %Cliente{} en una línea de texto CSV
   def convertir_cliente_linea_csv(cliente) do
     "#{cliente.nombre}, #{cliente.edad}, #{cliente.altura}"
   end
